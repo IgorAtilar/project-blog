@@ -2,6 +2,7 @@ import React from 'react';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 
 import CodeSnippet from '../CodeSnippet';
+import DivisionGroupsDemo from '../DivisionGroupsDemo';
 
 function MDXRender({ source = '', components = {} }) {
   return (
@@ -10,6 +11,7 @@ function MDXRender({ source = '', components = {} }) {
       components={{
         ...components,
         pre: CodeSnippet,
+        DivisionGroupsDemo,
       }}
     />
   );
