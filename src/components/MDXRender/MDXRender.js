@@ -3,6 +3,7 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 
 import CodeSnippet from '../CodeSnippet';
 import DivisionGroupsDemo from '../DivisionGroupsDemo';
+import CircularColorsDemo from '../CircularColorsDemo';
 
 function MDXRender({ source = '', components = {} }) {
   return (
@@ -12,6 +13,7 @@ function MDXRender({ source = '', components = {} }) {
         ...components,
         pre: CodeSnippet,
         DivisionGroupsDemo,
+        CircularColorsDemo,
       }}
     />
   );
